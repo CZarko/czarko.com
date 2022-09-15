@@ -21,6 +21,7 @@ ul.navbar-nav li a.nav-link {
 
 .alt {
 	background:#FFF !important;
+	box-shadow:1px 2px 4px 0px #00000075 !important;
 }
 
 .alt .navbar-brand {
@@ -44,12 +45,48 @@ ul.navbar-nav li a.nav-link.active{
 .banner {
 	position:relative;
 	background:url('../img/temp-bg.png'); 
+	background-attachment:fixed;
+	background-position:center;
 	background-repeat:no-repeat; 
 	background-size:cover;
-	background-position:right center;
+	
+	
 	height:100vh;
 	padding-top: 20vh;
+	clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .banner h1, p {color:#FFF;}
 .banner strong {color:#B5FFE1;}
+
+.btn-custom { 
+  color: #FFFFFF; 
+  background-color: #93E5AB; 
+  border-color: #93E5AB; 
+} 
+ 
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  color: #FFFFFF; 
+  background-color: #65B891; 
+  border-color: #65B891; 
+} 
+
+.btn-outline-custom { 
+  color: #65B891; 
+  background-color: transparent;
+  border-color: #93E5AB; 
+} 
+ 
+.btn-outline-custom:hover, 
+.btn-outline-custom:focus, 
+.btn-outline-custom:active, 
+.btn-outline-custom.active, 
+.open .dropdown-toggle.btn-outline-custom { 
+  color: #FFFFFF; 
+  background-color: #93E5AB; 
+  border-color: #93E5AB; 
+} 
