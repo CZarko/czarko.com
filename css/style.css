@@ -12,6 +12,7 @@ header {
 	color:#FFF !important;
 	font-weight:bold;
 	font-size:2.5rem;
+	letter-spacing:0.5rem;
 }
 
 ul.navbar-nav li a.nav-link {
@@ -56,8 +57,8 @@ ul.navbar-nav li a.nav-link.active{
 	clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.banner h1, p {color:#FFF;}
-.banner strong {color:#B5FFE1;}
+.banner h1, .banner p {color:#FFF;}
+.banner strong {color:#B5FFE1; letter-spacing:0.25rem; font-size:4rem;}
 
 .btn-custom { 
   color: #FFFFFF; 
@@ -90,3 +91,62 @@ ul.navbar-nav li a.nav-link.active{
   background-color: #93E5AB; 
   border-color: #93E5AB; 
 } 
+
+@media(max-width:980px){
+	.banner {
+		padding-bottom:50px;
+	}
+}
+
+.progress-title {
+	width:100%;
+	height:auto;
+}
+
+.progress-title h3 {
+	font-size:1.5rem;
+	font-weight: 700;
+	margin: 0 0 0.31rem;
+}
+
+.progress {
+	height:1.5rem;
+	background:#00241B;
+	border-radius:0px;
+	box-shadow:0 2px 2px #4F4C4C;
+	margin-bottom:1.5rem;
+	overflow:visible;
+	position:relative;
+}
+
+.progress .progress-bar {
+	border-radius:0;
+	background:#65B891;
+	animation:animate-positive 2s;
+}
+
+.progress .progress-value {
+	width:3.5rem;
+	height:1.5rem;
+	line-height:1.5rem;
+	background:#4E878C;
+	font-size:1rem;
+	font-weight:700;
+	color:#fff;
+	box-shadow:0 2px 2px #4F4C4C;
+	position:absolute;
+	bottom:-1rem;
+	right:5%;
+}
+
+@-webkit-keyframes animate-positive {
+	0%{
+		width:0;
+	}
+}
+
+@keyframes animate-positive {
+	0%{
+		width:0;
+	}
+}
